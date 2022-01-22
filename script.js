@@ -1,10 +1,11 @@
 let button = document.getElementById('btn');
+button.addEventListener('click',function(){
+    let CountryName= document.getElementById("txt").value;
+    
+    console.log(CountryName);
+    let creatNewOption=document.createElement("option");
+    creatNewOption.text=CountryName;
+    let select=document.getElementById("select");
+    select.appendChild(creatNewOption);
 
-
-button.addEventListener('click', function(){
-    let word = document.getElementById('text').value;
-    let count=word.length;
-    console.log(count);
- let data=   document.getElementById('output');
- data.innerHTML =`<h1>Length of word: ${count}</h1>`;
-})
+});
