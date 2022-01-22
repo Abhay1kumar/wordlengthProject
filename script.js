@@ -7,7 +7,9 @@ button.addEventListener('click',function(){
     console.log(y);
     if(x==y){
         alert('Congratulation👌😀 you guessed right number ' + name);
+    }else if(x>y){
+        alert('😭Try again. You guessed lower number Mr.' + name);
     }else{
-        alert('😭Try again. You guessed worng Mr.' + name);
+        alert('😭Try again. You guessed higer number Mr.' + name)
     }
 })
